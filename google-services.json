@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "547128797093",
+    "project_id": "shaidwarbah",
+    "storage_bucket": "shaidwarbah.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547128797093:android:ef8914495ec538d3526a4c",
+        "android_client_info": {
+          "package_name": "com.shaidwarbah.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547128797093-v77jnn2293mg0ng0nq643rtg7t114n7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpuT_628pZEIsZ0aSTrMp_dANT0323bVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547128797093-v77jnn2293mg0ng0nq643rtg7t114n7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
