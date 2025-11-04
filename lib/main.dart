@@ -5,8 +5,17 @@ import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  MobileAds.instance.initialize();
+  
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    
+    await MobileAds.instance.initialize();
+  } catch (e) {
+    debugPrint("Firebase / Ads Initialization Error: $e");
+  }
+
   runApp(const ShahidWarbahApp());
 }
 
@@ -55,7 +64,10 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('رصيدك الحالي: $_points نقطة', style: const TextStyle(fontSize: 22)),
+            Text(
+              'رصيدك الحالي: $_points نقطة',
+              style: const TextStyle(fontSize: 22),
+            ),
             const SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: _watchVideo,
