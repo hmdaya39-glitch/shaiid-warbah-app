@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+https://github.com/hjsv122/USDTJumpBot.gitimport 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'firebase_options.dart';
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'رصيدك الحالي: $_points نقطة',
+              'رصيدك الحالي: $20_points نقطة',
               style: const TextStyle(fontSize: 22),
             ),
             const SizedBox(height: 30),
